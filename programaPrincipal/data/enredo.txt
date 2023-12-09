@@ -1,0 +1,13 @@
+Neste arquivo será descrito os processos feitos na disciplina de HPC-1.
+Os tempos considerados foram a média de 20 medidas.
+Nele, vamos considerando os Benchmarks de do projeto mais "cru" possível até com o uso das implementações, podendo assim descrever qual foi o ponto mais cruacial na performance.
+Os passos dados até então foram:
+	- planejamento do código princípal usando um fluxograma
+	- makefile para codigos profissionais
+	- otimizacao do kernel para o hardware em questao
+	- benchmarks de baixo nivel para processadores
+	- Otimizacao a nivel de compiladores
+	- FFLAGS
+	- variacoes das threads utilizadas.
+	- uso do profiling para saber o que está deixando o código lento para paralelizar neste ponto.
+	

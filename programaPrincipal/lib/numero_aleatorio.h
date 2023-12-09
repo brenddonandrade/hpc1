@@ -7,7 +7,8 @@
 int rand_number(int max){
 	int value;
 	
-	value = rand() % (max+1);
+	
+	value = rand() % (max);
 	return value;	
 }
 #endif

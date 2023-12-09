@@ -6,9 +6,7 @@
 #include "./numero_aleatorio.h"
 #include "./create_initial_state.h"
 #include "./constantes.h"
-#include "./plot_population_state.h"
 #include "./write_population_state.h"
-#include "./hamiltoniana.h"
 #include "./social_media.h"
 #include "./iteration.h"
 
@@ -21,8 +19,6 @@ void inicialize(){
 	int  **M;
 
 	M = create_initial_state();
-	iteration(&M);
-	//plot_population_state(M);
-	write_population_state(M);
+	iteration(M);
 }
 #endif

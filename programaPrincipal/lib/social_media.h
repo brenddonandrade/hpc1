@@ -5,15 +5,16 @@
 #define SOCIAL_MEDIA
 
 //
-int social_media_effect(){
+int social_media_effect(int i){
 	int follow;
 	
-	follow = rand_number(99);
+	follow = rand_number(100);
 
 	if(follow < INFLUENCER)
-		return 1;
+		return OPINION_INFLUENCER;
 	else
-		return -1;
+		return i;
+
 }
 
 #endif

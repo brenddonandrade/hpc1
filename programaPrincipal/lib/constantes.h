@@ -1,18 +1,25 @@
 //Constants
-#define STEPS 2000
-#define POPULATION 100
+#define STEPS 1000
+
+#define POPULATION_X (16000+2)
+#define POPULATION_Y (16000+2)
+//#define POPULATION_X (3200+2)
+//#define POPULATION_Y (3200+2)
+
+//Parametros
+#define NUM_THREADS
 
 
 // field in the standard model
-#define INFLUENCER 100
+#define OPINION_INFLUENCER 1
+#define INFLUENCER 10
 
 
 // population MAN in %
 #define MAN 50
 
-
 // initial state od the system
-// 0 == off
+//  == off
 // 1 == on
 // 2 == randon
 #define INITIAL_STATE 2 

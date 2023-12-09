@@ -1,0 +1,19 @@
+se nao sabe as flags:
+	gnu: native
+	intel: xHost
+
+Fazer um speedup
+
+Normalizar pelo maior tempo obtido.
+
+Ver todas as métricas de comparacao e implementar no projeto
+	- speedup
+	- 
+
+
+Testar flags, visto que OX nao funciona no meu projeto
+
+entregar o programa
+	- enviar o codigo
+	- 
+

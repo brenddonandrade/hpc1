@@ -1,0 +1,4 @@
+Metodo		Tempo[s]
+icc_guided8	3300
+icc_dynamicAll 	2700
+ 
