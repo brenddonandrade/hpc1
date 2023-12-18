@@ -1,5 +1,6 @@
 #include "dependencias.h"
 #include "constantes.h"
+#include "numero_aleatorio.h"
 
 #ifndef CREATE_INITIAL_STATE
 #define CREATE_INITIAL_STATE

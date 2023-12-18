@@ -1,0 +1,7 @@
+sdumont6167
+sdumont6167
+ldd: /scratch/uff21hpc/brenddon.oliveira/periodo20232/hpc1/projetos/programaPrincipal/source-intel/programa: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/parallel_studio_xe_2019/compilers_and_libraries_2019.3.199/linux/mkl/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/parallel_studio_xe_2019/compilers_and_libraries_2019.3.199/linux/mkl/include"
+Tempo (ini): 1702827022

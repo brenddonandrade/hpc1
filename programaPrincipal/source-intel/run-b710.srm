@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#SBATCH --nodes=1                      #Numero de Nós
+#SBATCH --ntasks-per-node=1            #Numero de tarefas por Nó
+#SBATCH --ntasks=1                     #Numero total de tarefas MPI
+#SBATCH --cpus-per-task=24              #Numero de threads
+#SBATCH -p cpu_dev                        #Fila (partition) a ser utilizada
+#SBATCH -J brenddon                         #Nome job
+#SBATCH --exclusive                    #Utilização exclusiva dos nós durante a execução do job
+
+#Exibe os nós alocados para o Job
+echo $SLURM_JOB_NODELIST
+nodeset -e $SLURM_JOB_NODELIST
+
+cd $SLURM_SUBMIT_DIR
+
+#Configura os compiladores
+#Intel
+#source /scratch/app/modulos/intel-psxe-2016.sh
+
+#ou
+#GNU
+#module load gcc/6.5
+
+#Configura o executavel
+way=$(pwd)
+EXEC=$way/programa
+
+#exibe informaçoes sobre o executavel
+/usr/bin/ldd $EXEC
+
+for i in $(seq 22 2 24);
+	do
+		sed -i "s/#define NUM_THREADS/#define NUM_THREADS $i/g" ../lib/constantes.h
+
+		make clean
+		make
+		export OMP_NUM_THREADS=$i
+		
+		sed -i "s/#define NUM_THREADS $i/#define NUM_THREADS/g" ../lib/constantes.h
+
+		mkdir tempo-intel-b710-16000-$i
+		(time srun -N 1 -c $i $EXEC $i $2  $3 ) 2>  ./tempo-intel-b710-16000-$i/tempo-$i.out 
+		
+		echo "Thread = $i" >> acompanhamento-intel-b710.txt
+	done;

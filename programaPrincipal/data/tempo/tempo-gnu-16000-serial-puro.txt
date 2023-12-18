@@ -1,0 +1,4 @@
+pc		Tempo[s]
+b170		16m23.327s
+sequana 	12m31.910s
+lab107c		13m47.316s		

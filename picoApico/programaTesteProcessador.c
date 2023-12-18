@@ -4,7 +4,7 @@
 #include <time.h>
 
 #define RM 1e8
-#define N                          10
+#define N           10
 
 void main(){
 	int i, j;

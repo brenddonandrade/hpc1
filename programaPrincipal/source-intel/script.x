@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-for i in $(seq 2 2 6);
+for i in $(seq 2 2 8);
 	do
-		mkdir tempo-intel-$i	
+		mkdir tempo-intel-lab107c-3200-$i	
 		sed -i "s/#define NUM_THREADS/#define NUM_THREADS $i/g" ../lib/constantes.h
 
 		make clean
@@ -12,7 +12,7 @@ for i in $(seq 2 2 6);
 
 		sed -i "s/#define NUM_THREADS $i/#define NUM_THREADS/g" ../lib/constantes.h
 
-		(time ./programa $i $2 $3 >> estadoInicial.out) 2>  ./tempo-intel-$i/tempo-$i.out &
+		(time ./programa $i $2 $3 >> estadoInicial.out) 2>  ./tempo-intel-lab107c-3200-$i/tempo-$i.out &
 	
 		# aguardando para proxima iteracao
                 processo=$!

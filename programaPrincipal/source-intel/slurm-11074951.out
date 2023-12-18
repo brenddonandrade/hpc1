@@ -1,0 +1,109 @@
+sdumont6165
+sdumont6165
+	linux-vdso.so.1 =>  (0x00007ffef55c5000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002adbf69be000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00002adbf6cc0000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00002adbf6ee7000)
+	libiomp5.so => /scratch/opt/intel/oneapi/2022/compiler/2022.0.2/linux/compiler/lib/intel64_lin/libiomp5.so (0x00002adbf7111000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00002adbf7532000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002adbf7748000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002adbf7964000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002adbf7d32000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002adbf679a000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002adbf7f36000)
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702834873
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702834892
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702834913
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702834932
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702834952
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702834972
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702834992
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835012
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835032
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835052
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835072
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835092
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835113
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835132
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835152
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835173
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835193
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835214
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835234
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835255
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835276
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835297
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835318
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702835339

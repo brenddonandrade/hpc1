@@ -1,0 +1,13 @@
+sdumont6167
+sdumont6167
+	linux-vdso.so.1 =>  (0x00007fff707eb000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002b299390d000)
+	libncurses.so.6 => not found
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00002b2993c0f000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002b2993e25000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002b29941f3000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b29936e9000)
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/include"
+/bin/sh: icc: command not found
+make: *** [../obj/modelo_de_opiniao.o] Error 127

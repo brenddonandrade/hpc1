@@ -6,8 +6,7 @@
 
 int rand_number(int max){
 	int value;
-	
-	
+
 	value = rand() % (max);
 	return value;	
 }

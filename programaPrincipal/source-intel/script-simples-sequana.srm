@@ -1,0 +1,44 @@
+#!/bin/bash
+
+#SBATCH --nodes=1                      #Numero de Nós
+#SBATCH --ntasks-per-node=1            #Numero de tarefas por Nó
+#SBATCH --ntasks=1                     #Numero total de tarefas MPI
+#SBATCH --cpus-per-task=48            #Numero de threads
+#SBATCH -p sequana_cpu_dev                        #Fila (partition) a ser utilizada
+#SBATCH -J brenddon                         #Nome job
+#SBATCH --exclusive                    #Utilização exclusiva dos nós durante a execução do job
+#SBATCH --time=00:20:00 
+
+#Exibe os nós alocados para o Job
+echo $SLURM_JOB_NODELIST
+nodeset -e $SLURM_JOB_NODELIST
+
+cd $SLURM_SUBMIT_DIR
+
+## 1) Carrega o módulo sequana
+# module load sequana/current
+
+## 2) Carrega os módulos desejados (intel)
+#source /scratch/app_sequana/modulos/intel-psxe-2019_sequana.sh
+
+#ou
+#GNU
+#module load gcc/6.5
+
+#Configura o executavel
+way=$(pwd)
+EXEC=$way/programa
+
+#exibe informaçoes sobre o executavel
+/usr/bin/ldd $EXEC
+
+sed -i "s/#define NUM_THREADS/#define NUM_THREADS $1/g" ../lib/constantes.h
+
+make clean
+make
+export OMP_NUM_THREADS=$1
+
+sed -i "s/#define NUM_THREADS $1/#define NUM_THREADS/g" ../lib/constantes.h
+(time srun -N 1 -c $1 $EXEC $1 $2  $3 ) 2>  ./tempo-teste-sequana.out
+#(time srun -N 1 -c $SLURM_CPUS_PER_TASK $EXEC $1 $2  $3 ) 2>  ./tempo-icc-sequana-16000-$1/tempo-$1.out
+#(time srun -N 1 -c $SLURM_CPUS_PER_TASK $EXEC $1 $2  $3 ) 2>  ./tempo-icc-sequana-16000-serial-otimizado/tempo.out

@@ -1,0 +1,5 @@
+pc		Tempo[s]
+b710		6m20.013s	
+sequana 	4m47.513s
+lab107c		6m22.631s
+

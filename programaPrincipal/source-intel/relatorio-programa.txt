@@ -94,3 +94,239 @@ steps: 78	 cu: -0.00	 dia: 2023-12-08--14:37:45	 malha: 256000000
 Tempo (acima) 455	 treads: 4	 ox: 0	 cc: icc_dynamic
 steps: 78	 cu: -0.00	 dia: 2023-12-08--14:45:23	 malha: 256000000
 Tempo (acima) 457	 treads: 6	 ox: 0	 cc: icc_dynamic
+steps: 57	 cu: -0.00	 dia: 2023-12-11--08:16:25	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 0	 cc: icc_xHost
+steps: 57	 cu: -0.00	 dia: 2023-12-11--08:19:06	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 0	 cc: icc_xHost
+steps: 57	 cu: -0.00	 dia: 2023-12-11--09:15:59	 malha: 10240000
+Tempo (acima) 24	 treads: 8	 ox: 0	 cc: icc_xHost
+steps: 57	 cu: -0.00	 dia: 2023-12-11--09:17:34	 malha: 10240000
+Tempo (acima) 23	 treads: 8	 ox: 0	 cc: icc_xHosSched
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:14:57	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:21:52	 malha: 10240000
+Tempo (acima) 15	 treads: 1	 ox: 0	 cc: icc_O3
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:22:52	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 0	 cc: icc_O2
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:23:59	 malha: 10240000
+Tempo (acima) 16	 treads: 1	 ox: 0	 cc: icc_O1
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:26:04	 malha: 10240000
+Tempo (acima) 31	 treads: 1	 ox: 0	 cc: icc_O0
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:41:24	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 0	 cc: icc_ipo
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:43:02	 malha: 10240000
+Tempo (acima) 12	 treads: 1	 ox: 0	 cc: icc_ipo
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:43:41	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 0	 cc: icc_ipo_O2
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:46:03	 malha: 10240000
+Tempo (acima) 14	 treads: 1	 ox: 0	 cc: icc_xHost
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:48:41	 malha: 10240000
+Tempo (acima) 14	 treads: 1	 ox: 2	 cc: icc_xHost
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:49:50	 malha: 10240000
+Tempo (acima) 14	 treads: 1	 ox: 3	 cc: icc_xHost
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:51:17	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 0	 cc: icc_parallel
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:52:32	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 2	 cc: icc_parallel
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:53:26	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 0	 cc: icc_parallel_xHoi0we
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:54:06	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 0	 cc: icc_parallel_ipo‘0we
+steps: 57	 cu: -0.00	 dia: 2023-12-11--12:54:50	 malha: 10240000
+Tempo (acima) 12	 treads: 1	 ox: 0	 cc: icc_-vec-report
+steps: 57	 cu: -0.00	 dia: 2023-12-11--13:00:04	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 0	 cc: icc_fp_fast
+steps: 57	 cu: -0.00	 dia: 2023-12-11--13:01:00	 malha: 10240000
+Tempo (acima) 12	 treads: 1	 ox: 0	 cc: icc_march_nat
+steps: 57	 cu: -0.00	 dia: 2023-12-11--13:02:23	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 0	 cc: icc_qopt
+steps: 57	 cu: -0.00	 dia: 2023-12-11--15:13:57	 malha: 10240000
+Tempo (acima) 15	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: -0.00	 dia: 2023-12-11--15:14:42	 malha: 10240000
+Tempo (acima) 15	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: -0.00	 dia: 2023-12-11--15:18:53	 malha: 10240000
+Tempo (acima) 15	 treads: 1	 ox: 2	 cc: icc
+steps: 57	 cu: -0.00	 dia: 2023-12-11--15:19:18	 malha: 10240000
+Tempo (acima) 15	 treads: 1	 ox: 2	 cc: icc
+steps: 57	 cu: -0.00	 dia: 2023-12-11--15:21:25	 malha: 10240000
+Tempo (acima) 23	 treads: 8	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-15--16:15:25	 malha: 10240000
+Tempo (acima) 20	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-15--16:20:18	 malha: 10240000
+Tempo (acima) 20	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-15--16:26:10	 malha: 10240000
+Tempo (acima) 20	 treads: 1	 ox: 0	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-15--16:38:39	 malha: 256000000
+Tempo (acima) 459	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-15--16:48:33	 malha: 10240000
+Tempo (acima) 11	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-15--16:58:24	 malha: 10240000
+Tempo (acima) 11	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-15--17:29:34	 malha: 10240000
+Tempo (acima) 14	 treads: 1	 ox: 0	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-15--17:38:41	 malha: 256000000
+Tempo (acima) 379	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-16--11:53:40	 malha: 10240000
+Tempo (acima) 14	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-16--12:02:25	 malha: 10240000
+Tempo (acima) 10	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-16--12:06:30	 malha: 10240000
+Tempo (acima) 10	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-16--12:08:33	 malha: 10240000
+Tempo (acima) 10	 treads: 1	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-16--12:16:17	 malha: 10240000
+Tempo (acima) 15	 treads: 1	 ox: 0	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-16--12:18:45	 malha: 256000000
+Tempo (acima) 297	 treads: 1	 ox: 0	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-16--12:25:28	 malha: 10240000
+Tempo (acima) 14	 treads: 1	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-16--12:35:43	 malha: 256000000
+Tempo (acima) 346	 treads: 1	 ox: 0	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-16--12:37:48	 malha: 256000000
+Tempo (acima) 278	 treads: 1	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-16--12:43:36	 malha: 256000000
+Tempo (acima) 344	 treads: 1	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--02:38:34	 malha: 256000000
+Tempo (acima) 570	 treads: 2	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--02:48:09	 malha: 256000000
+Tempo (acima) 574	 treads: 4	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--11:07:29	 malha: 256000000
+Tempo (acima) 320	 treads: 1	 ox: 0	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--11:16:57	 malha: 256000000
+Tempo (acima) 321	 treads: 1	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--11:29:29	 malha: 10240000
+Tempo (acima) 20	 treads: 2	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--11:29:49	 malha: 10240000
+Tempo (acima) 20	 treads: 4	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--11:30:10	 malha: 10240000
+Tempo (acima) 21	 treads: 6	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--11:30:34	 malha: 10240000
+Tempo (acima) 23	 treads: 8	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--11:34:36	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--11:35:53	 malha: 10240000
+Tempo (acima) 13	 treads: 1	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--12:30:41	 malha: 10240000
+Tempo (acima) 19	 treads: 4	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--12:44:41	 malha: 10240000
+Tempo (acima) 22	 treads: 4	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--12:56:34	 malha: 10240000
+Tempo (acima) 18	 treads: 4	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--12:58:45	 malha: 10240000
+Tempo (acima) 18	 treads: 4	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--13:00:35	 malha: 10240000
+Tempo (acima) 18	 treads: 4	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--13:02:07	 malha: 10240000
+Tempo (acima) 20	 treads: 48	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:20:23	 malha: 10240000
+Tempo (acima) 23	 treads: 2	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:20:48	 malha: 10240000
+Tempo (acima) 24	 treads: 4	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:21:16	 malha: 10240000
+Tempo (acima) 24	 treads: 6	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:21:41	 malha: 10240000
+Tempo (acima) 25	 treads: 8	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:22:06	 malha: 10240000
+Tempo (acima) 24	 treads: 10	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:22:31	 malha: 10240000
+Tempo (acima) 24	 treads: 12	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:22:57	 malha: 10240000
+Tempo (acima) 25	 treads: 14	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:23:25	 malha: 10240000
+Tempo (acima) 24	 treads: 16	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:23:50	 malha: 10240000
+Tempo (acima) 25	 treads: 18	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:24:15	 malha: 10240000
+Tempo (acima) 25	 treads: 20	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:24:41	 malha: 10240000
+Tempo (acima) 24	 treads: 22	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:25:07	 malha: 10240000
+Tempo (acima) 25	 treads: 24	 ox: 2	 cc: icc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:41:31	 malha: 10240000
+Tempo (acima) 18	 treads: 2	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:41:51	 malha: 10240000
+Tempo (acima) 19	 treads: 4	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:42:12	 malha: 10240000
+Tempo (acima) 19	 treads: 6	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:42:31	 malha: 10240000
+Tempo (acima) 19	 treads: 8	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:42:51	 malha: 10240000
+Tempo (acima) 19	 treads: 10	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:43:11	 malha: 10240000
+Tempo (acima) 19	 treads: 12	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:43:31	 malha: 10240000
+Tempo (acima) 19	 treads: 14	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:43:51	 malha: 10240000
+Tempo (acima) 19	 treads: 16	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:44:11	 malha: 10240000
+Tempo (acima) 19	 treads: 18	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:44:32	 malha: 10240000
+Tempo (acima) 20	 treads: 20	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:44:51	 malha: 10240000
+Tempo (acima) 19	 treads: 22	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:45:11	 malha: 10240000
+Tempo (acima) 19	 treads: 24	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:45:32	 malha: 10240000
+Tempo (acima) 19	 treads: 26	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:45:52	 malha: 10240000
+Tempo (acima) 20	 treads: 28	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:46:12	 malha: 10240000
+Tempo (acima) 20	 treads: 30	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:46:33	 malha: 10240000
+Tempo (acima) 20	 treads: 32	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:46:53	 malha: 10240000
+Tempo (acima) 20	 treads: 34	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:47:14	 malha: 10240000
+Tempo (acima) 20	 treads: 36	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:47:35	 malha: 10240000
+Tempo (acima) 21	 treads: 38	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:47:55	 malha: 10240000
+Tempo (acima) 20	 treads: 40	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:48:16	 malha: 10240000
+Tempo (acima) 20	 treads: 42	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:48:37	 malha: 10240000
+Tempo (acima) 20	 treads: 44	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:48:58	 malha: 10240000
+Tempo (acima) 20	 treads: 46	 ox: 3	 cc: gcc
+steps: 57	 cu: 0.50	 dia: 2023-12-17--14:49:19	 malha: 10240000
+Tempo (acima) 20	 treads: 48	 ox: 3	 cc: gcc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--15:12:52	 malha: 256000000
+Tempo (acima) 580	 treads: 6	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--15:22:27	 malha: 256000000
+Tempo (acima) 575	 treads: 8	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--15:35:52	 malha: 256000000
+Tempo (acima) 579	 treads: 10	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--15:45:37	 malha: 256000000
+Tempo (acima) 581	 treads: 12	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--15:46:14	 malha: 256000000
+Tempo (acima) 441	 treads: 2	 ox: 3	 cc: gcc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--15:53:40	 malha: 256000000
+Tempo (acima) 445	 treads: 4	 ox: 3	 cc: gcc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--15:59:56	 malha: 256000000
+Tempo (acima) 588	 treads: 14	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--16:08:45	 malha: 256000000
+Tempo (acima) 442	 treads: 6	 ox: 3	 cc: gcc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--16:09:32	 malha: 256000000
+Tempo (acima) 576	 treads: 16	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--16:16:09	 malha: 256000000
+Tempo (acima) 443	 treads: 8	 ox: 3	 cc: gcc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--16:20:44	 malha: 256000000
+Tempo (acima) 579	 treads: 18	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--16:30:29	 malha: 256000000
+Tempo (acima) 581	 treads: 20	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--17:40:08	 malha: 256000000
+Tempo (acima) 442	 treads: 10	 ox: 3	 cc: gcc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--17:40:39	 malha: 256000000
+Tempo (acima) 577	 treads: 22	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--17:47:50	 malha: 256000000
+Tempo (acima) 462	 treads: 12	 ox: 3	 cc: gcc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--17:50:41	 malha: 256000000
+Tempo (acima) 601	 treads: 24	 ox: 2	 cc: icc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--18:01:04	 malha: 256000000
+Tempo (acima) 461	 treads: 14	 ox: 3	 cc: gcc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--18:08:35	 malha: 256000000
+Tempo (acima) 450	 treads: 16	 ox: 3	 cc: gcc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--18:21:01	 malha: 256000000
+Tempo (acima) 463	 treads: 18	 ox: 3	 cc: gcc
+steps: 78	 cu: 0.50	 dia: 2023-12-17--18:28:25	 malha: 256000000
+Tempo (acima) 443	 treads: 20	 ox: 3	 cc: gcc

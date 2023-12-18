@@ -1,0 +1,23 @@
+sdumont1438
+sdumont1438
+	linux-vdso.so.1 =>  (0x00007ffc83382000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002aae36926000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00002aae36c28000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00002aae36e4f000)
+	libiomp5.so => /opt/intel/oneapi/compiler/2022.0.2/linux/compiler/lib/intel64_lin/libiomp5.so (0x00002aae37079000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00002aae3749a000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002aae376b0000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002aae378cc000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002aae37c9a000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002aae36702000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002aae37e9e000)
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-22': File exists
+Tempo (ini): 1702845062
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-24': File exists
+Tempo (ini): 1702845640

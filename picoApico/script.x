@@ -1,4 +1,3 @@
-
 old_value=$(grep '#define N' programaTesteProcessador.c | cut -d N -f2)
 
 rm NxMFLOPS.dat
@@ -37,5 +36,5 @@ for i in $(seq 1 7)
 	done
 
 sed -i "s/$new_value/ $old_value/g" programaTesteProcessador.c
-gnuplot plot_picoApico.gp
-xdg-open picoApico.png
+#gnuplot plot_picoApico.gp
+#xdg-open picoApico.png

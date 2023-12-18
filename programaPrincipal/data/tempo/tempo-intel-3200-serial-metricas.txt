@@ -1,0 +1,9 @@
+Puro		13
+O0		31
+O1 		16
+O2	 	12
+O3 		15
+ipo	 	13
+xHost 		14
+parallel 	13 
+march	 	12

@@ -1,0 +1,14 @@
+sdumont1285
+sdumont1285
+	linux-vdso.so.1 =>  (0x00007ffe7b98c000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002b8b04a5a000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00002b8b04d5c000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00002b8b04f83000)
+	libgcc_s.so.1 => /scratch/app/gcc/6.5/lib64/libgcc_s.so.1 (0x00002b8b051ad000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002b8b053c4000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002b8b05792000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b8b04836000)
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -lm -diag-disable=10441 -lncurses 
+icc -o programa ../obj/modelo_de_opiniao.o -I. -lm -diag-disable=10441 -lncurses 
+Tempo (ini): 1702668660

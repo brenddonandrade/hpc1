@@ -1,5 +1,4 @@
-./script-simples.x, linha 15: 10501 Terminado               ./programa $1 $2 $3 > estadoInicial.out
 
-real	50m13,640s
-user	146m32,656s
-sys	212m26,634s
+real	0m23,045s
+user	1m28,427s
+sys	0m3,851s

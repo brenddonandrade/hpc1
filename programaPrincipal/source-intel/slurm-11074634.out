@@ -1,0 +1,18 @@
+sdumont1324
+sdumont1324
+ldd: /scratch/uff21hpc/brenddon.oliveira/periodo20232/hpc1/projetos/programaPrincipal/source-intel/programa: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-2': File exists
+Tempo (ini): 1702790944
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-4': File exists
+Tempo (ini): 1702791515
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-6': File exists
+slurmstepd: error: *** JOB 11074634 ON sdumont1324 CANCELLED AT 2023-12-17T02:49:07 DUE TO TIME LIMIT ***

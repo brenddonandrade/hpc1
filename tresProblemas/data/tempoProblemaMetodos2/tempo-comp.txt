@@ -1,0 +1,6 @@
+ox 	serial	paral-1	paral-2	paral-3 paral-4 paral-6 paral-8
+0	5.700	4.782	0	0	0	0	0
+1	5.708	0	0	0.001	0	0	0
+2	5.806	0	0	0	0	0	0
+3	5.871	0	0	0	0	0	0
+	

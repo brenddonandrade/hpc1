@@ -8,7 +8,8 @@
 #include "./constantes.h"
 #include "./write_population_state.h"
 #include "./social_media.h"
-#include "./iteration.h"
+#include "./iteration-after.h"
+//#include "./iteration-before.h"
 
 
 #ifndef MODELO_DE_OPINIAO
@@ -16,6 +17,7 @@
 
 void inicialize(){
 	int i, j, itr;
+	double cu;
 	int  **M;
 
 	M = create_initial_state();

@@ -1,0 +1,33 @@
+# Para o gcc
+Sem flags: 29s (parametro)
+
+
+-O0: 30s (validou)
+-O1 (somente): 16s (funcionou). Validou os passos.
+-O2 (somente): 15s (funcionou). Validou os passos.
+-O3 (somente): 14s (funcionou). Validou os passos.
+
+-march=native: 30s (validou os dados)
+-funroll-loops: 29s (validou)
+-ftree-vectorize: 30s (validou)
+-march=native -mtune=native: 30s (validou)
+-mtune=native: 29s (validou)
+-march=native: 29s (validou)
+-flto: 29s (validou) 
+
+
+# Para o icc
+Sem flags: 13s
+
+-O0: 31s (validou) (usar a flag -O0 tira as otimizacoes do icc?)
+-O1: 16s (validou)
+-O2: 12s (validou)
+-O3: 15s (validou)
+ 
+
+-ipo: 13s (validou)
+-ipo + -O2: 13s (validou)
+-xHost: 14s (validou)
+-xHost + -O2: 14s (validou)
+-parallel: 13s (validou)
+-march: 12s (validou)

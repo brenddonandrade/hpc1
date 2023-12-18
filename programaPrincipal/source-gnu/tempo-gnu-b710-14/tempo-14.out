@@ -1,0 +1,5 @@
+./script-lncc-b710.x: line 4: 12023 Segmentation fault      ./programa $i $2 $3 > estadoInicial.out
+
+real	0m0.019s
+user	0m0.005s
+sys	0m0.012s

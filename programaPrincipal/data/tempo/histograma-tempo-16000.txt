@@ -1,0 +1,6 @@
+# performance obtida com a malha de 16000, variando os parametros de paralelizacao 
+# no lab 107c
+
+Metodo		Tempo[s]
+icc_guided8	3300
+icc_dynamicAll 	2700 

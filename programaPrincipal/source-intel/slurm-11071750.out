@@ -1,0 +1,16 @@
+sdumont6165
+sdumont6165
+ModuleCmd_Load.c(213):ERROR:105: Unable to locate a modulefile for 'sequana/current'
+ModuleCmd_Load.c(213):ERROR:105: Unable to locate a modulefile for 'gcc/6.5'
+	linux-vdso.so.1 =>  (0x00002b4e88633000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002b4e88835000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00002b4e88b37000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00002b4e88d5e000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00002b4e88f88000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002b4e8919e000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002b4e8956c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b4e88611000)
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -lm -diag-disable=10441 -lncurses 
+icc -o programa ../obj/modelo_de_opiniao.o -I. -lm -diag-disable=10441 -lncurses 
+Tempo (ini): 1702669702

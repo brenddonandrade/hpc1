@@ -1,0 +1,82 @@
+sdumont1324
+sdumont1324
+	linux-vdso.so.1 =>  (0x00007ffe93d5e000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002ab54d9a7000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00002ab54dca9000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00002ab54ded0000)
+	libgcc_s.so.1 => /scratch/app/gcc/9.3/lib64/libgcc_s.so.1 (0x00002ab54e0fa000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002ab54e312000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002ab54e6e0000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002ab54d783000)
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+Catastrophic error: could not set locale "" to allow processing of multibyte characters
+
+compilation aborted for modelo_de_opiniao.c (code 4)
+make: *** [../obj/modelo_de_opiniao.o] Error 4
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+Catastrophic error: could not set locale "" to allow processing of multibyte characters
+
+compilation aborted for modelo_de_opiniao.c (code 4)
+make: *** [../obj/modelo_de_opiniao.o] Error 4
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+Catastrophic error: could not set locale "" to allow processing of multibyte characters
+
+compilation aborted for modelo_de_opiniao.c (code 4)
+make: *** [../obj/modelo_de_opiniao.o] Error 4
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+Catastrophic error: could not set locale "" to allow processing of multibyte characters
+
+compilation aborted for modelo_de_opiniao.c (code 4)
+make: *** [../obj/modelo_de_opiniao.o] Error 4
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+Catastrophic error: could not set locale "" to allow processing of multibyte characters
+
+compilation aborted for modelo_de_opiniao.c (code 4)
+make: *** [../obj/modelo_de_opiniao.o] Error 4
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+Catastrophic error: could not set locale "" to allow processing of multibyte characters
+
+compilation aborted for modelo_de_opiniao.c (code 4)
+make: *** [../obj/modelo_de_opiniao.o] Error 4
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+Catastrophic error: could not set locale "" to allow processing of multibyte characters
+
+compilation aborted for modelo_de_opiniao.c (code 4)
+make: *** [../obj/modelo_de_opiniao.o] Error 4
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+Catastrophic error: could not set locale "" to allow processing of multibyte characters
+
+compilation aborted for modelo_de_opiniao.c (code 4)
+make: *** [../obj/modelo_de_opiniao.o] Error 4
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+Catastrophic error: could not set locale "" to allow processing of multibyte characters
+
+compilation aborted for modelo_de_opiniao.c (code 4)
+make: *** [../obj/modelo_de_opiniao.o] Error 4
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+Catastrophic error: could not set locale "" to allow processing of multibyte characters
+
+compilation aborted for modelo_de_opiniao.c (code 4)
+make: *** [../obj/modelo_de_opiniao.o] Error 4
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+Catastrophic error: could not set locale "" to allow processing of multibyte characters
+
+compilation aborted for modelo_de_opiniao.c (code 4)
+make: *** [../obj/modelo_de_opiniao.o] Error 4
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -I"/scratch/app/oneapi/2022.2/mkl/2022.1.0//include"
+Catastrophic error: could not set locale "" to allow processing of multibyte characters
+
+compilation aborted for modelo_de_opiniao.c (code 4)
+make: *** [../obj/modelo_de_opiniao.o] Error 4

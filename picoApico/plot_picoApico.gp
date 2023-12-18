@@ -5,6 +5,6 @@ set xlabel "N"
 set ylabel "MFLOPS"
 set logscale x 
 set output "picoApico.png"
-plot 	"NxMFLOPS-pc-2.dat" u 1:2 w lp title "PC-2", \
-	"NxMFLOPS-pc-3.dat" u 1:2 w lp title "PC-3", \
-	"NxMFLOPS-notebook.dat" u 1:2 w lp title "Notebook"
+plot 	"NxMFLOPS-b710.dat" u 1:2 w lp title "B710", \
+	"NxMFLOPS-sequana.dat" u 1:2 w lp title "Sequana", \
+	"NxMFLOPS-lab107c.dat" u 1:2 w lp title "lab107c"

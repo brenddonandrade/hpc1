@@ -1,0 +1,14 @@
+sdumont1140
+sdumont1140
+	linux-vdso.so.1 =>  (0x00007ffef6579000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002b9d7570e000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00002b9d75a10000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00002b9d75c37000)
+	libgcc_s.so.1 => /scratch/app/gcc/6.5/lib64/libgcc_s.so.1 (0x00002b9d75e61000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002b9d76078000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002b9d76446000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b9d754ea000)
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -lm -diag-disable=10441 -lncurses 
+make: icc: Comando não encontrado
+make: ** [../obj/modelo_de_opiniao.o] Erro 127

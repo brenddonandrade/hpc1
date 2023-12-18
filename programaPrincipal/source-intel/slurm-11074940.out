@@ -1,0 +1,73 @@
+sdumont1460
+sdumont1460
+	linux-vdso.so.1 =>  (0x00007ffe6a85a000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002ac73f16b000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00002ac73f46d000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00002ac73f694000)
+	libiomp5.so => /opt/intel/oneapi/compiler/2022.0.2/linux/compiler/lib/intel64_lin/libiomp5.so (0x00002ac73f8be000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00002ac73fcdf000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002ac73fef5000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002ac740111000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002ac7404df000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002ac73ef47000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002ac7406e3000)
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-2': File exists
+/tmp/slurmd/job11074940/slurm_script: line 32: ./tempo-intel-b710-3200-2/tempo-2.out: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-4': File exists
+/tmp/slurmd/job11074940/slurm_script: line 32: ./tempo-intel-b710-3200-4/tempo-4.out: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-6': File exists
+/tmp/slurmd/job11074940/slurm_script: line 32: ./tempo-intel-b710-3200-6/tempo-6.out: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-8': File exists
+/tmp/slurmd/job11074940/slurm_script: line 32: ./tempo-intel-b710-3200-8/tempo-8.out: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-10': File exists
+/tmp/slurmd/job11074940/slurm_script: line 32: ./tempo-intel-b710-3200-10/tempo-10.out: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-12': File exists
+/tmp/slurmd/job11074940/slurm_script: line 32: ./tempo-intel-b710-3200-12/tempo-12.out: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-14': File exists
+/tmp/slurmd/job11074940/slurm_script: line 32: ./tempo-intel-b710-3200-14/tempo-14.out: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-16': File exists
+/tmp/slurmd/job11074940/slurm_script: line 32: ./tempo-intel-b710-3200-16/tempo-16.out: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-18': File exists
+/tmp/slurmd/job11074940/slurm_script: line 32: ./tempo-intel-b710-3200-18/tempo-18.out: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-20': File exists
+/tmp/slurmd/job11074940/slurm_script: line 32: ./tempo-intel-b710-3200-20/tempo-20.out: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-22': File exists
+/tmp/slurmd/job11074940/slurm_script: line 32: ./tempo-intel-b710-3200-22/tempo-22.out: No such file or directory
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-24': File exists
+/tmp/slurmd/job11074940/slurm_script: line 32: ./tempo-intel-b710-3200-24/tempo-24.out: No such file or directory

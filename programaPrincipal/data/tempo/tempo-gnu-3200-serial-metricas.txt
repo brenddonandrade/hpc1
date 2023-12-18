@@ -1,0 +1,8 @@
+Flag		Tempo[s]
+Puro		29 
+O0		30 
+O1 		16 
+O2		15
+O3		14	 
+flto 		29 
+

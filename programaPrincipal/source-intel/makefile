@@ -2,22 +2,29 @@
 # Data: 15/09 ver: 0.1
 
 
-# Serial
+#lab107c
 #MKLROOT = /opt/intel/oneapi/mkl/2023.0.0/
-#LIBS =  -Wl,--start-group ${MKLROOT}/lib/intel64/libmkl_intel_lp64.a ${MKLROOT}/lib/intel64/libmkl_sequential.a ${MKLROOT}/lib/intel64/libmkl_core.a -Wl,--end-group -lpthread -lm -ldl
+
+#b710
+#MKLROOT = /scratch/app/oneapi/2022.2/mkl/2022.1.0/
+
+#sequana
+#MKLROOT =  /opt/intel/oneapi/2022/mkl/2022.0.2/
+
+# serial
+#LIBS = -Wl,--start-group ${MKLROOT}/lib/ia32/libmkl_intel.a ${MKLROOT}/lib/ia32/libmkl_sequential.a ${MKLROOT}/lib/ia32/libmkl_core.a -Wl,--end-group -lpthread -lm -ldl
 #(COMP   -I"${MKLROOT}/include")
 
 
 # Paralelo
-MKLROOT = /opt/intel/oneapi/mkl/2023.0.0/
-LIBS = -Wl,--start-group ${MKLROOT}/lib/intel64/libmkl_intel_lp64.a ${MKLROOT}/lib/intel64/libmkl_intel_thread.a ${MKLROOT}/lib/intel64/libmkl_core.a -Wl,--end-group -liomp5 -lpthread -lm -ldl
+#LIBS = -Wl,--start-group ${MKLROOT}/lib/intel64/libmkl_intel_lp64.a ${MKLROOT}/lib/intel64/libmkl_intel_thread.a ${MKLROOT}/lib/intel64/libmkl_core.a -Wl,--end-group -liomp5 -lpthread -lm -ldl
 #(COMP  -I"${MKLROOT}/include" )
 
 
 CC=icc
-#CFLAGS= -I. -lm -lncurses 
-#CFLAGS= -I. -xHost -lm -lncurses  -I"${MKLROOT}/include"
-CFLAGS= -I. -xHost -lm -lncurses -qopenmp  -I"${MKLROOT}/include"
+#CFLAGS= -I. -lm -lncurses -no-multibyte-chars 
+#CFLAGS= -I. -O2  -lm -lncurses -I"${MKLROOT}/include" -no-multibyte-chars 
+CFLAGS= -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"${MKLROOT}/include"
 
 
 DEPS=../lib/modelo_de_opiniao.h

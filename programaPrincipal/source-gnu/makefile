@@ -13,9 +13,9 @@
 
 
 CC=gcc
-#iCFLAGS= -I. -lm -lncurses 
-#CFLAGS= -I. -mtune=native -lm -lncurses
-CFLAGS= -I. -mtune=native -lm -lncurses -fopenmp
+#CFLAGS= -I. -lm -lncurses 
+#CFLAGS= -I. -O3 -lm -lncurses 
+CFLAGS= -I. -O3 -lm -lncurses -fopenmp
 
 DEPS=../lib/modelo_de_opiniao.h
 OBJ=../obj/modelo_de_opiniao.o

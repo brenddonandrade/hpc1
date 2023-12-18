@@ -1,0 +1,28 @@
+sdumont1489
+sdumont1489
+	linux-vdso.so.1 =>  (0x00007ffead370000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002b77f967e000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00002b77f9980000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00002b77f9ba7000)
+	libiomp5.so => /opt/intel/oneapi/compiler/2022.0.2/linux/compiler/lib/intel64_lin/libiomp5.so (0x00002b77f9dd1000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00002b77fa1f2000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002b77fa408000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002b77fa624000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002b77fa9f2000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b77f945a000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002b77fabf6000)
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-10': File exists
+Tempo (ini): 1702837573
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-12': File exists
+Tempo (ini): 1702838157
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/opt/intel/oneapi/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-b710-16000-14': File exists
+slurmstepd: error: *** JOB 11074967 ON sdumont1489 CANCELLED AT 2023-12-17T15:46:17 DUE TO TIME LIMIT ***

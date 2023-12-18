@@ -1,0 +1,9 @@
+sdumont1152
+sdumont1152
+cmdTrace.c(713):ERROR:104: 'intel-oneapi/2022' is an unrecognized subcommand
+cmdModule.c(411):ERROR:104: 'intel-oneapi/2022' is an unrecognized subcommand
+ldd: /scratch/uff21hpc/brenddon.oliveira/periodo20232/hpc1/projetos/programaPrincipal/source-intel/programa: Arquivo ou diretório não encontrado
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -lm -diag-disable=10441 -lncurses 
+icc -o programa ../obj/modelo_de_opiniao.o -I. -lm -diag-disable=10441 -lncurses 
+Tempo (ini): 1702672160

@@ -1,0 +1,5 @@
+srun: Job step aborted: Waiting up to 302 seconds for job step to finish.
+slurmstepd: error: *** STEP 11075030.2 ON sdumont6165 CANCELLED AT 2023-12-17T18:33:20 DUE TO TIME LIMIT ***
+srun: got SIGCONT
+srun: forcing job termination
+srun: error: sdumont6165: task 0: Terminated

@@ -1,0 +1,540 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 30
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: 10000
+  -inline-max-per-compile: 500000
+
+
+Begin optimization report for: main(int, char **)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (main(int, char **)) [1] modelo_de_opiniao.c(3,34)
+  -> INLINE: (9,11) atoi(const char *)
+     {{ Inlining of routines from system headers is omitted. Use -qopt-report=3 to view full report. }}
+  -> INLINE: (10,7) atoi(const char *)
+     {{ Inlining of routines from system headers is omitted. Use -qopt-report=3 to view full report. }}
+  -> INLINE: (18,2) inicialize()
+    -> INLINE: ../lib/modelo_de_opiniao.h:(22,6) create_initial_state()
+      -> INLINE: ../lib/./create_initial_state.h:(32,49) rand_number(int)
+    -> ../lib/modelo_de_opiniao.h:(23,2) iteration(int **)
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at ../lib/./create_initial_state.h(13,9) inlined into modelo_de_opiniao.c(18,2)
+   remark #15527: loop was not vectorized: function call to malloc(size_t) cannot be vectorized   [ ../lib/./create_initial_state.h(14,24) ]
+LOOP END
+
+LOOP BEGIN at ../lib/./create_initial_state.h(29,25) inlined into modelo_de_opiniao.c(18,2)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at ../lib/./create_initial_state.h(30,37) inlined into modelo_de_opiniao.c(18,2)
+      remark #15527: loop was not vectorized: function call to rand(void) cannot be vectorized   [ ../lib/./numero_aleatorio.h(11,10) ]
+   LOOP END
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+modelo_de_opiniao.c(3,34):remark #34051: REGISTER ALLOCATION : [main] modelo_de_opiniao.c:3
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   12[ rax rdx rcx rbx rsi rdi r8-r9 r12-r15]
+        
+    Routine temporaries
+        Total         :      77
+            Global    :      27
+            Local     :      50
+        Regenerable   :      25
+        Spilled       :       7
+        
+    Routine stack
+        Variables     :      35 bytes*
+            Reads     :       4 [8.66e-06 ~ 0.0%]
+            Writes    :       2 [4.33e-06 ~ 0.0%]
+        Spills        :      16 bytes*
+            Reads     :       2 [4.33e-06 ~ 0.0%]
+            Writes    :       2 [1.08e-06 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: iteration(int **)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (iteration(int **)) [2] ../lib/./iteration-before.h(10,25)
+  -> INLINE: (63,24) social_media_effect(int)
+    -> INLINE: ../lib/./social_media.h:(11,11) rand_number(int)
+  -> INLINE: (64,26) social_media_effect(int)
+    -> INLINE: ../lib/./social_media.h:(11,11) rand_number(int)
+  -> INLINE: (65,24) social_media_effect(int)
+    -> INLINE: ../lib/./social_media.h:(11,11) rand_number(int)
+  -> INLINE: (66,26) social_media_effect(int)
+    -> INLINE: ../lib/./social_media.h:(11,11) rand_number(int)
+  -> INLINE: (67,26) social_media_effect(int)
+    -> INLINE: ../lib/./social_media.h:(11,11) rand_number(int)
+  -> INLINE: (68,24) social_media_effect(int)
+    -> INLINE: ../lib/./social_media.h:(11,11) rand_number(int)
+  -> INLINE: (69,26) social_media_effect(int)
+    -> INLINE: ../lib/./social_media.h:(11,11) rand_number(int)
+  -> INLINE: (70,24) social_media_effect(int)
+    -> INLINE: ../lib/./social_media.h:(11,11) rand_number(int)
+  -> INLINE: (97,4) write_relaxation_time(int, double)
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at ../lib/./iteration-before.h(20,9)
+   remark #15527: loop was not vectorized: function call to malloc(size_t) cannot be vectorized   [ ../lib/./iteration-before.h(21,31) ]
+LOOP END
+
+LOOP BEGIN at ../lib/./iteration-before.h(25,9)
+   remark #15527: loop was not vectorized: function call to malloc(size_t) cannot be vectorized   [ ../lib/./iteration-before.h(26,30) ]
+LOOP END
+
+LOOP BEGIN at ../lib/./iteration-before.h(28,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at ../lib/./iteration-before.h(29,3)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at ../lib/./iteration-before.h(29,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at ../lib/./iteration-before.h(29,3)
+   <Alternate Alignment Vectorized Loop>
+   LOOP END
+
+   LOOP BEGIN at ../lib/./iteration-before.h(29,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at ../lib/./iteration-before.h(29,3)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at ../lib/./iteration-before.h(37,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at ../lib/./iteration-before.h(38,10)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at ../lib/./iteration-before.h(49,10)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at ../lib/./iteration-before.h(50,18)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at ../lib/./iteration-before.h(75,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between *(*(m_after+8)+k*4) (76:4) and *(*(m_after+25600)+k*4) (78:4)
+   remark #25438: unrolled without remainder by 2  
+   remark #25456: Number of Array Refs Scalar Replaced In Loop: 2
+LOOP END
+
+LOOP BEGIN at ../lib/./iteration-before.h(82,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   remark #25456: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at ../lib/./iteration-before.h(88,3)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at ../lib/./iteration-before.h(89,17)
+      remark #25399: memcopy generated
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at ../lib/./iteration-before.h(47,2)
+   remark #15532: loop was not vectorized: compile time constraints prevent loop optimization. Consider using -O3.
+
+   LOOP BEGIN at ../lib/./iteration-before.h(55,3)
+      remark #15532: loop was not vectorized: compile time constraints prevent loop optimization. Consider using -O3.
+
+      LOOP BEGIN at ../lib/./iteration-before.h(56,4)
+         remark #15532: loop was not vectorized: compile time constraints prevent loop optimization. Consider using -O3.
+      LOOP END
+   LOOP END
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+../lib/./iteration-before.h(89,17):remark #34026: call to memcpy implemented as a call to optimized library version
+../lib/./iteration-before.h(10,25):remark #34051: REGISTER ALLOCATION : [iteration] ../lib/./iteration-before.h:10
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   31[ rax rdx rcx rbx rbp rsi rdi r8-r15 zmm0-zmm15]
+        
+    Routine temporaries
+        Total         :     296
+            Global    :     108
+            Local     :     188
+        Regenerable   :      37
+        Spilled       :      15
+        
+    Routine stack
+        Variables     :      88 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :      72 bytes*
+            Reads     :      26 [6.28e+00 ~ 6.3%]
+            Writes    :      10 [2.77e-03 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: rand_number(int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (rand_number(int)) [4] ../lib/./numero_aleatorio.h(7,25)
+
+
+    Report from: Code generation optimizations [cg]
+
+../lib/./numero_aleatorio.h(7,25):remark #34051: REGISTER ALLOCATION : [rand_number] ../lib/./numero_aleatorio.h:7
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    4[ rax rdx rdi r12]
+        
+    Routine temporaries
+        Total         :      15
+            Global    :       9
+            Local     :       6
+        Regenerable   :       0
+        Spilled       :       1
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: write_population_state(int **, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (write_population_state(int **, int)) [5] ../lib/./write_population_state.h(7,46)
+
+
+    Report from: Code generation optimizations [cg]
+
+../lib/./write_population_state.h(7,46):remark #34051: REGISTER ALLOCATION : [write_population_state] ../lib/./write_population_state.h:7
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    2[ rsi rdi]
+        
+    Routine temporaries
+        Total         :       8
+            Global    :       0
+            Local     :       8
+        Regenerable   :       0
+        Spilled       :       0
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: social_media_effect(int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (social_media_effect(int)) [6] ../lib/./social_media.h(8,31)
+  -> INLINE: (11,11) rand_number(int)
+
+
+    Report from: Code generation optimizations [cg]
+
+../lib/./social_media.h(8,31):remark #34051: REGISTER ALLOCATION : [social_media_effect] ../lib/./social_media.h:8
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    6[ rax rdx rcx rsi rdi r15]
+        
+    Routine temporaries
+        Total         :      22
+            Global    :       9
+            Local     :      13
+        Regenerable   :       2
+        Spilled       :       1
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: write_relaxation_time(int, double)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (write_relaxation_time(int, double)) [7] ../lib/./write_relaxation_time.h(7,49)
+
+
+    Report from: Code generation optimizations [cg]
+
+../lib/./write_relaxation_time.h(7,49):remark #34051: REGISTER ALLOCATION : [write_relaxation_time] ../lib/./write_relaxation_time.h:7
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    9[ rax rdx rcx rsi rdi r8 r14-r15 zmm0]
+        
+    Routine temporaries
+        Total         :      38
+            Global    :      13
+            Local     :      25
+        Regenerable   :      19
+        Spilled       :       3
+        
+    Routine stack
+        Variables     :      88 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :       8 bytes*
+            Reads     :       1 [2.04e+00 ~ 2.0%]
+            Writes    :       1 [2.32e+00 ~ 2.3%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: plot_population(int **)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (plot_population(int **)) [8] ../lib/./plot_population.h(7,30)
+
+
+    Report from: Code generation optimizations [cg]
+
+../lib/./plot_population.h(7,30):remark #34051: REGISTER ALLOCATION : [plot_population] ../lib/./plot_population.h:7
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    1[ rdi]
+        
+    Routine temporaries
+        Total         :       7
+            Global    :       0
+            Local     :       7
+        Regenerable   :       0
+        Spilled       :       0
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: inicialize()
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (inicialize()) [9] ../lib/modelo_de_opiniao.h(18,18)
+  -> INLINE: (22,6) create_initial_state()
+    -> INLINE: ../lib/./create_initial_state.h:(32,49) rand_number(int)
+  -> (23,2) iteration(int **)
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at ../lib/./create_initial_state.h(13,9) inlined into ../lib/modelo_de_opiniao.h(23,6)
+   remark #15527: loop was not vectorized: function call to malloc(size_t) cannot be vectorized   [ ../lib/./create_initial_state.h(14,24) ]
+LOOP END
+
+LOOP BEGIN at ../lib/./create_initial_state.h(29,25) inlined into ../lib/modelo_de_opiniao.h(23,6)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at ../lib/./create_initial_state.h(30,37) inlined into ../lib/modelo_de_opiniao.h(23,6)
+      remark #15527: loop was not vectorized: function call to rand(void) cannot be vectorized   [ ../lib/./numero_aleatorio.h(11,10) ]
+   LOOP END
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+../lib/modelo_de_opiniao.h(18,18):remark #34051: REGISTER ALLOCATION : [inicialize] ../lib/modelo_de_opiniao.h:18
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   10[ rax rdx rcx rbx rbp rsi rdi r8 r14-r15]
+        
+    Routine temporaries
+        Total         :      30
+            Global    :      18
+            Local     :      12
+        Regenerable   :       5
+        Spilled       :       4
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :      16 bytes*
+            Reads     :       2 [4.33e-06 ~ 0.0%]
+            Writes    :       2 [1.08e-06 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: create_initial_state()
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (create_initial_state()) [10] ../lib/./create_initial_state.h(9,29)
+  -> INLINE: (32,49) rand_number(int)
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at ../lib/./create_initial_state.h(13,9)
+   remark #15527: loop was not vectorized: function call to malloc(size_t) cannot be vectorized   [ ../lib/./create_initial_state.h(14,24) ]
+LOOP END
+
+LOOP BEGIN at ../lib/./create_initial_state.h(29,25)
+   remark #15541: outer loop was not auto-vectorized: consider using SIMD directive
+
+   LOOP BEGIN at ../lib/./create_initial_state.h(30,37)
+      remark #15527: loop was not vectorized: function call to rand(void) cannot be vectorized   [ ../lib/./numero_aleatorio.h(11,10) ]
+   LOOP END
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+../lib/./create_initial_state.h(9,29):remark #34051: REGISTER ALLOCATION : [create_initial_state] ../lib/./create_initial_state.h:9
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    9[ rax rdx rcx rbx rbp rsi rdi r14-r15]
+        
+    Routine temporaries
+        Total         :      30
+            Global    :      18
+            Local     :      12
+        Regenerable   :       5
+        Spilled       :       4
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :      16 bytes*
+            Reads     :       2 [4.33e-06 ~ 0.0%]
+            Writes    :       2 [1.08e-06 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================

@@ -1,0 +1,7 @@
+sdumont1440
+sdumont1440
+:: Initializing oneAPI modulefiles folder ...
+:: Removing any previous oneAPI modulefiles folder content.
+mkdir: é impossível criar o diretório “/tmp/slurmd/job11071866/modulefiles”: Permissão negada
+:: ERROR: Creation of "/tmp/slurmd/job11071866/modulefiles" folder failed.
+   Can be caused by read-only target or existing file of same name.

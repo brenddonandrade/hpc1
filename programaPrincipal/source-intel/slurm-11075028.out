@@ -1,0 +1,26 @@
+sdumont6165
+sdumont6165
+	linux-vdso.so.1 =>  (0x00007ffd64cb5000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002afa89bb8000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00002afa89eba000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00002afa8a0e1000)
+	libiomp5.so => /scratch/opt/intel/oneapi/2022/compiler/2022.0.2/linux/compiler/lib/intel64_lin/libiomp5.so (0x00002afa8a30b000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00002afa8a72c000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002afa8a942000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002afa8ab5e000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002afa8af2c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002afa89994000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002afa8b130000)
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+mkdir: cannot create directory 'tempo-intel-sequana-16000-14': File exists
+Tempo (ini): 1702846403
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+Tempo (ini): 1702846865
+rm -f ../obj/modelo_de_opiniao.o programa
+icc -c -o ../obj/modelo_de_opiniao.o modelo_de_opiniao.c -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+icc -o programa ../obj/modelo_de_opiniao.o -I. -O2 -lm -lncurses -qopenmp -no-multibyte-chars -I"/scratch/opt/intel/oneapi/2022/mkl/2022.0.2/include"
+slurmstepd: error: *** JOB 11075028 ON sdumont6165 CANCELLED AT 2023-12-17T18:12:56 ***
